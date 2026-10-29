@@ -44,9 +44,7 @@ function App() {
         </button>
 
         <div className="result">
-          {!joke && !error && !loading && (
-            <p className="empty">No joke yet.</p>
-          )}
+          {!joke && !error && !loading && <p className="empty">No joke yet.</p>}
 
           {joke && (
             <>
@@ -58,9 +56,9 @@ function App() {
           {error && (
             <>
               <p className="error">{error}</p>
-              <a href="/" className="retry" onClick={handleRetry}>
+              <button type="button" className="retry" onClick={fetchJoke}>
                 Try again
-              </a>
+              </button>
             </>
           )}
         </div>

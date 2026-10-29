@@ -58,7 +58,7 @@ function App() {
           {error && (
             <>
               <p className="error">{error}</p>
-              <a href="#" className="retry" onClick={handleRetry}>
+              <a href="/" className="retry" onClick={handleRetry}>
                 Try again
               </a>
             </>

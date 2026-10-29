@@ -28,10 +28,10 @@ function App() {
     }
   };
 
-  const handleRetry = (e) => {
-    e.preventDefault();
-    fetchJoke();
-  };
+  // const handleRetry = (e) => {
+  //   e.preventDefault();
+  //   fetchJoke();
+  // };
 
   return (
     <div className="page">
